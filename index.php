@@ -39,7 +39,7 @@
 
 	// Path to custom CSS file (optional).
 	// Try out `demo.css`!
-	$customCSS = 'demo.css';
+	$customCSS = '';
 
 	// Favicon to be displayed in the browser (optional).
 	// Must be a single emoji.
