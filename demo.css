@@ -1,0 +1,134 @@
+:root {
+	--background: #efe;
+	--primary: #030;
+	--secondary: #353;
+	--accent: #474;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #020;
+		--primary: #efe;
+		--secondary: #696;
+		--accent: #5a5;
+	}
+}
+
+*:focus {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+body {
+	background-color: var(--background);
+	color: var(--primary);
+	font-family: ui-sans-serif, sans-serif;
+	padding-block: 1em;
+	margin-inline: auto;
+}
+
+a {
+	color: var(--accent);
+}
+
+a:hover {
+	color: var(--primary);
+}
+
+:is(h1 small, hgroup p, figcaption) {
+	color: var(--secondary);
+}
+
+h1 em::before {
+	content: '(';
+}
+
+h1 em::after {
+	content: ')';
+}
+
+h2 {
+	font-size: 1.25em;
+}
+
+img {
+	border-radius: 1rem;
+}
+
+@media (min-width: 769px) {
+	img {
+		max-width: 300px;
+	}
+}
+
+section {
+	margin-block: 2em;
+}
+
+figcaption {
+	text-align: center;
+	padding-inline: 2em;
+}
+
+@media (min-width: 769px) {
+	figure {
+		float: inline-end;
+		margin-inline-start: 2em;
+	}
+}
+
+dl {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
+
+dl div {
+	position: relative;
+	padding: 0.75em 1em;
+	border: 2px solid var(--secondary);
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+dl div:has(a:hover) {
+	border-color: var(--accent);
+}
+
+dt {
+	font-weight: normal;
+}
+
+dd {
+	font-weight: bold;
+	line-height: 1.15;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-inline-start: 0;
+	overflow: hidden;
+}
+
+@media (min-width: 769px) {
+	dd {
+		font-size: 1.25em;
+	}
+}
+
+dd a {
+	text-decoration: none;
+}
+
+dd a:hover {
+	color: var(--accent);
+	text-decoration: underline;
+}
+
+dd a::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+}
+
+footer {
+	text-align: center;
+}
