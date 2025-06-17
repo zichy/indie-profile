@@ -1,4 +1,8 @@
 <?php
+/*
+	SPDX-FileCopyrightText: 2025 zichy
+	SPDX-License-Identifier: Unlicense
+*/
 
 	$generatorName = 'indie-profile';
 	$generatorUrl = 'https://github.com/zichy/indie-profile';
