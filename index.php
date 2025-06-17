@@ -1,10 +1,5 @@
 <?php
-/*
-	▘   ▌▘          ▐▘▘▜
-	▌▛▌▛▌▌█▌▄▖▛▌▛▘▛▌▜▘▌▐ █▌
-	▌▌▌▙▌▌▙▖  ▙▌▌ ▙▌▐ ▌▐▖▙▖
-	          ▌
-*/
+
 	$generatorName = 'indie-profile';
 	$generatorUrl = 'https://github.com/zichy/indie-profile';
 
