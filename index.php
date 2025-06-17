@@ -94,7 +94,7 @@
 	$photoAlt = 'A black man with a short beard, wearing a green shirt and smiling into the camera';
 
 	// Photo caption (optional).
-	// May include license and text formatting.
+	// May include text formatting.
 	$photoCaption = 'Photo: <em>Justin Shaifer</em> (CC0)';
 
 	// Description of yourself (optional).
