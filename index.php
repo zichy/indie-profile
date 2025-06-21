@@ -185,7 +185,7 @@
 	if ($website) $websiteLabel = preg_replace("(^https?://)", "", $website);
 
 	if ($email) $emailLink = (filter_var($email, FILTER_VALIDATE_EMAIL)) ? true : false;
-	if ($emailLink) $email = '<a href="mailto:'.$email.'" itemprop="email" class="u-email">'.$email.'</a>';
+	if ($emailLink) $email = '<a href="mailto:'.$email.'" itemprop="email" class="u-email" rel="me">'.$email.'</a>';
 
 	if ($phone) $phoneLink = preg_replace("/[\s\-\/]/", "", $phone);
 
